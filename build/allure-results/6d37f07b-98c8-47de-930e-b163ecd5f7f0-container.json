@@ -1,1 +1,0 @@
-{"uuid":"6d37f07b-98c8-47de-930e-b163ecd5f7f0","name":"BookApiTest","children":["d68f0cc6-b860-40f0-8214-5209cce5e0c3"],"befores":[{"name":"beforeAll","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1650918688418,"stop":1650918691099}],"afters":[],"start":1650918688342,"stop":1650918691323}

@@ -13,6 +13,7 @@ import org.junit.jupiter.api.Test;
 import static io.qameta.allure.Allure.step;
 import static io.restassured.RestAssured.given;
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.hamcrest.CoreMatchers.is;
 
 
 public class BookApiTest {
@@ -85,6 +86,22 @@ public class BookApiTest {
 
     @Test
     void getBookList(){
+        given()
+                .when()
+                .get("/booking")
+                .then()
+                .statusCode(200);
+    }
+
+    @Test
+    void getBook(){
+        given()
+                .when()
+                .get("/booking/149")
+                .then()
+                .body("firstname",is("lorenso"))
+                .statusCode(200);
+
 
     }
 
